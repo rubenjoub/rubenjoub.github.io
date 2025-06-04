@@ -1,6 +1,5 @@
 gsap.registerPlugin(ScrollTrigger);
 
-// Animation for name-section
 gsap.timeline({
   scrollTrigger: {
     trigger: '.name-section',
@@ -14,7 +13,6 @@ gsap.timeline({
 .to('.first-name', { x: '-60vw' }, 0)
 .to('.last-name', { x: '60vw' }, 0);
 
-// Smooth scroll
 const lenis = new Lenis();
 
 function raf(time) {
@@ -24,7 +22,6 @@ function raf(time) {
 
 requestAnimationFrame(raf);
 
-// Store shapes globally
 let shapes = [];
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -58,11 +55,10 @@ window.addEventListener('DOMContentLoaded', () => {
     shape.style.transform = `rotate(${rotation}deg)`;
 
     shapeContainer.appendChild(shape);
-    shapes.push(shape); // add to global array
+    shapes.push(shape);
   }
 });
 
-// Mousemove interaction
 document.addEventListener('mousemove', e => {
   shapes.forEach(shape => {
     const rect = shape.getBoundingClientRect();
@@ -80,3 +76,17 @@ document.addEventListener('mousemove', e => {
     shape.style.transform = `scale(${scale})`;
   });
 });
+
+document.querySelectorAll('.project-card').forEach(card => {
+  card.addEventListener('click', () => {
+    card.classList.toggle('expanded');
+  });
+});
+
+document.querySelectorAll('.toggle-btn').forEach(button => {
+  button.addEventListener('click', () => {
+    const details = button.nextElementSibling;
+    details.style.display = details.style.display === 'block' ? 'none' : 'block';
+  });
+});
+

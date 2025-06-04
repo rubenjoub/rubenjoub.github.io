@@ -18,7 +18,111 @@
       <strong class="last-name">Joubert</strong>
     </div>
   </section>
-  
+
+  <section class="about-section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I'm a dedicated and versatile designer and developer with a passion for creating smart, functional, and engaging solutions. My skill set spans front-end web development, 3D CAD modeling, and embedded systems using microcontrollers such as the ESP32.
+      </p>
+      <p>
+        I have hands-on experience with HTML, CSS, JavaScript, and GSAP for building responsive, interactive websites. I also work with CAD tools like SolidWorks to design and prototype mechanical components.
+      </p>
+      <p>
+        In addition, I’ve built projects using the ESP32 and other microcontrollers — from sensor-based systems to connected IoT devices — where I combine electronics with programming to solve real-world problems. This blend of hardware and software expertise allows me to approach problems holistically, from concept through to functional prototype.
+      </p>
+      <p>
+        I'm currently looking for opportunities to grow professionally, contribute to innovative projects, and work with teams that value curiosity, technical skill, and creativity.
+      </p>
+    </div>
+  </section>
+
+  <section class="projects-section">
+    <h2>My Projects</h2>
+
+    <div class="project-card">
+      <div class="project-header">
+        <img src="images/project1.jpg" alt="Web App Screenshot" class="project-img">
+        <div>
+          <h3>Web App</h3>
+          <p class="short-desc">A JavaScript-based web tool.</p>
+        </div>
+      </div>
+      <div class="project-details">
+        <p>This app uses GSAP, responsive layouts, and real-time updates. Built with HTML, CSS, and JavaScript. Features dynamic animations and API integration.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-header">
+        <img src="images/project2.jpg" alt="ESP32 Screenshot" class="project-img">
+        <div>
+          <h3>ESP32 IoT System</h3>
+          <p class="short-desc">Sensor-based data automation.</p>
+        </div>
+      </div>
+      <div class="project-details">
+        <p>This IoT project uses the ESP32 to monitor temperature and motion. Data is sent to a web dashboard using Wi-Fi. Includes power efficiency and OTA update support.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cad-section">
+    <h2>CAD Projects</h2>
+    <div class="cad-container">
+      <div class="cad-card">
+        <h3 class="cad-title">Drone Frame</h3>
+        <button class="toggle-btn">View 3D Model</button>
+        <div class="cad-details">
+          <p>This is a custom-designed 3D-printed drone frame using Fusion 360.</p>
+          <iframe 
+            title="Drone Frame"
+            frameborder="0"
+            allowfullscreen
+            mozallowfullscreen="true"
+            webkitallowfullscreen="true"
+            width="100%"
+            height="400"
+            src="https://sketchfab.com/models/YOUR_MODEL_ID/embed">
+          </iframe>
+        </div>
+      </div>
+
+      <div class="cad-card">
+        <h3 class="cad-title">Gearbox Design</h3>
+        <button class="toggle-btn">View 3D Model</button>
+        <div class="cad-details">
+          <p>A functional gearbox model demonstrating torque and gear ratios.</p>
+          <iframe 
+            title="Gearbox"
+            frameborder="0"
+            allowfullscreen
+            width="100%"
+            height="400"
+            src="https://sketchfab.com/models/YOUR_MODEL_ID/embed">
+          </iframe>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <h2>Contact Me</h2>
+    <p>I'd love to hear from you! Fill out the form below.</p>
+
+    <form action="https://formspree.io/f/mnnvnpeo" method="POST" class="contact-form">
+      <input type="text" name="name" placeholder="Your name" required>
+      <input type="email" name="email" placeholder="Your email" required>
+      <textarea name="message" placeholder="Your message" rows="5" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ruben Joubert</p>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
