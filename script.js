@@ -8,7 +8,7 @@ gsap.timeline({
     end: 'bottom center',
     scrub: true,
     pin: true,
-    markers: true
+    markers: false
   }
 })
 .to('.first-name', { x: '-60vw' }, 0)
